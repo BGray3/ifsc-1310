@@ -10,6 +10,22 @@ html {
     box-sizing: inherit;
   }
 
+/*----------Responsive Imagies-------------*/
+
+img
+{
+ max-width: 100%; 
+}
+
+/*--------------Utility classes----------*/
+
+.container
+{
+max-width: 960px;
+width: 80vw;
+margin: 40px auto;
+}
+
   /* ----------- Global Styles ----------*/
 
   body
@@ -82,4 +98,99 @@ header.primary nav a
 header.primary nav a:hover
 {
 background-color: rgba(0,0,0,1.0);
+}
+
+#content
+{
+  line-height: 1.5;
+}
+
+#content h2
+{
+  color: #3b638b;
+  border-bottom:1px dotted #c0c0c0;
+}
+
+#content h3
+{
+border-left: 7.5px solid #3b638b;
+padding:7.5px;
+}
+
+#blog
+{
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+gap:2rem;
+}
+
+#blog .post
+{
+  box-shadow: 10px 13px 50px 5px rgba(0,0,0,.75);
+  padding: 10px;
+  border-radius: 4px;
+  font-size:.8rem;
+  transition: .5s;
+}
+
+#blog figure
+{
+  margin:0;
+}
+
+#blog figcaption
+{
+  text-transform: uppercase;
+  font-size: .6rem;
+}
+
+ #blog header h2
+ {
+  color:#c0c0c0;
+  margin:0;
+ }
+
+#blog h2 a
+{
+  color: #3b638b;
+}
+
+#blog .post:hover
+{
+  box-shadow: 20px 26px 100px 10px rgba(0,0,0,.75);
+  padding: 10px;
+  border-radius: 4px;
+  font-size:.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) 
+{
+  header.primary ul
+  {
+    flex-direction: column;
+    gap:20px;
+    max-width: 250px;
+    margin:auto;
+  }
+
+  header.primary nav a
+  {
+    display:block;
+  }
 }
