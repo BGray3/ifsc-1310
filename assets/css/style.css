@@ -14,7 +14,9 @@ body
 font-family: "Kode Mono", monospace;
 font-optical-sizing: auto;
 font-weight: 400;
-font-style: normal;     
+font-style: normal;    
+background-color: #1f2024;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23004f4d' fill-opacity='0.25' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 /*Header Styling*/
 header.primary
@@ -27,58 +29,95 @@ header.primary
 
 }
 
-header.primary h1 {
+header.primary h1 
+{
     font-size: 4rem;
     margin: 20px 0 0;
-  }
+}
   
-  header.primary h1 a {
+  header.primary h1 a 
+{
     color: #ffffff;
     text-decoration: none;
     border-bottom: 1px dashed #ffffff;
-  }
+}
 
+header.primary h2 
 
-header.primary h2 {
+{
     font-size: 2rem;
     margin-bottom: 2px;
-  }
+}
 
-/*Assignment Link styling*/
-header.primary nav {
+/*Assignment Link styling in body*/
+nav 
+{
     max-width: 450px;
-    margin: 20px auto;
-    
+    margin: 20px auto;   
+    text-align: center; 
   }
   
-  header.primary ul {
+ul 
+{
     padding: 40px 0;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
    
-  }
+}
   
-  header.primary ul li {
+ul li
+{
     list-style-type: none;
     margin-bottom: 30px;
-  }
-  
-  header.primary nav a {
+    text-decoration: none;
+}
+
+ul li:nth-child(1)
+{
     color: #ffffff;
     text-decoration:none;
-    background-color: rgba(90, 72, 99, 0.7);
+    text-transform: uppercase;
+    border-right: 12.5px double #A68F97;
+    border-left: 12.5px double #A68F97;
+    font-size: 2.8rem;
+    border-radius: 5px;
+}
+
+ul li:nth-child(6)
+{
+  color: #ffffff;
+  text-decoration:1px underline;
+  text-transform: uppercase;
+  border-right: 6.25px double #A68F97;
+  border-left: 6.25px double #A68F97;
+  font-size: 1.4rem;
+  border-radius: 2.5px;
+}
+  
+nav a 
+{
+    color: #ffffff;
+    text-decoration:none;
+    background-color: rgba(90, 72, 99, 0.4);
     padding: 5px 7.5px;
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
     border: 1px solid #79717A;
-  }
+    transition: .3s;
+}
+
+nav a:hover {
+  background-color: rgba(90, 72, 99, 0.9);
+}
 
 /*Box Size*/
-html {
+html 
+{
     box-sizing: border-box;
-  }
+}
   *,
   *:before,
   *:after {
     box-sizing: inherit;
-  }
+}
