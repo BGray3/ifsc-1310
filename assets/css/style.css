@@ -94,6 +94,13 @@ ul li:nth-child(6)
   font-size: 1.4rem;
   border-radius: 2.5px;
 }
+
+ul li:nth-child(11)
+{
+text-transform: none #ffffff;
+text-decoration:overline;
+color: #ffffff;
+}
   
 nav a 
 {
